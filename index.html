@@ -1,0 +1,89 @@
+<html>
+
+<head>
+  <title>YUMMY</title>
+  <link rel="icon" href="Assets/logo.png">
+  <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css">
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css"> 
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css">
+    
+    <title>Yummy</title>
+</head>
+
+<body>
+  <div class="all-menu position-relative">
+      <div class="menu position-fixed d-flex flex-column justify-content-between min-vh-100">
+        <div class="p-4">
+           <ul class="list-unstyled text-white cursor-pointer">
+         <li onclick="showSearchInputs(); closeSideNav()" class="py-2 position-relative cursor-pointer">Search</li>
+              <li onclick="getCategories(); closeSideNav()" class="py-2 position-relative cursor-pointer">Categories</li>
+              <li onclick="getArea(); closeSideNav()" class="py-2 position-relative cursor-pointer">Area</li>
+              <li onclick="getIngredients(); closeSideNav()" class="py-2 position-relative cursor-pointer">Ingredients</li>
+              <li onclick="showContacts(); closeSideNav()" class="py-2 position-relative cursor-pointer">Contact Us</li>
+           </ul>
+        </div>
+        <div class="social p-4">
+          <div class="icons d-flex py-2">
+            <i class=" fa-brands fa-facebook pe-2"></i>
+            <i class="fa-brands fa-twitter px-2"></i>
+            <i class="fa-solid fa-globe px-2"></i>
+          </div>
+          <div class="cpyrights">
+            <p>Copyright Â© 2019 All Rights Reserved.</p>
+          </div>
+        </div>
+    </div>
+    </div>
+  <div class="side-menu position-absolute bg-white d-flex flex-column justify-content-between min-vh-100">
+    <div class="smile">
+      <img src="Assets/logo.png" alt="" class="w-100 py-4 px-2">
+    </div>
+    <div class="exit text-center">
+      <i class="close fa-solid fa-xmark text-center" ></i>
+      <i class="bar fa-solid fa-bars text-center"></i>
+    </div>
+    <div class="side-icons flex-column d-flex py-4">
+      <i class="fa-solid fa-globe py-2 text-center fs-5"></i>
+      <i class="fa-solid fa-share-nodes text-center fs-5"></i>
+    </div>
+  </div>
+
+ 
+
+
+<div class="loading-screen position-fixed top-0 start-0 end-0 bottom-0 bg-black justify-content-center align-items-center">
+  <i class="fa fa-spinner fa-spin fa-5x"></i>
+</div>
+
+
+
+
+<div class="container w-75 text-white" id="searchContainer">
+ 
+</div>
+
+<div class="min-vh-100 position-relative text-white text-center align-content-center">
+  <div class="inner-loading-screen top-0 start-0 end-0 bottom-0 justify-content-center align-items-center">
+      <i class="fa fa-spinner fa-spin fa-5x"></i>
+  </div>
+  
+
+  <div class="container text-white">
+      <div class="row py-5 g-4 " id="rowData">
+          
+      </div>
+  </div>
+</div>
+
+
+  <script src="JS/code.jquery.com_jquery-3.7.0.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
